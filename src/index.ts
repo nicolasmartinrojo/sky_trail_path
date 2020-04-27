@@ -29,7 +29,6 @@ const findPath = (time_waste, checkpoints) => {
   let tree = { elem: "start", children: [] };
   recursiveTree(tree, time_waste);
   iterateTree(tree, paths, []);
-  console.log(paths);
   let maxCheckpoint = Number.NEGATIVE_INFINITY,
     maxPath;
   let tempCheckpoint, tempTimeWaste;
